@@ -24,17 +24,40 @@ This organization exists to explore how AI can be used **inside real engineering
 
 ## Active Projects
 
-### SCA — Static Code Analysis (AI-Assisted)
+### SCA — Security Control Agent
 
-**SCA** is an AI-assisted static analysis tool designed to analyze software repositories with a focus on:
+**SCA** is a **Security Control Agent** that uses AI to analyze a software repository against defined security expectations and control sets.
 
-- Security issues
-- Design and architectural inconsistencies
-- Violations of declared rules or invariants
-- Actionable findings suitable for CI/CD integration
+Instead of operating as a traditional vulnerability scanner, SCA focuses on **control-level analysis**: verifying that required security measures are present, coherent, and maintained as the codebase evolves.
 
-SCA is intended as a **developer tool**, not a certification or compliance product.  
-Its goal is to surface real issues early and express them in a form engineers can act on.
+SCA is designed to function as an **engineering control**, not a certification or compliance product.  
+Its purpose is to help teams **express, verify, and preserve security intent over time**.
+
+#### Types of Analysis
+
+SCA can perform repository analysis aligned with recognized security frameworks and practices, including:
+
+- **OWASP**  
+  Evaluation of common application security risks and control gaps (e.g. OWASP Top 10–style concerns).
+
+- **NIST**  
+  Analysis of security controls and practices inspired by NIST guidance (e.g. identity, cryptography, access control, and lifecycle concerns), without asserting formal compliance.
+
+- **Cryptographic Usage Analysis**  
+  Inspection of cryptographic algorithms, modes, key handling practices, and configuration choices.
+
+- **Repository Security Hygiene**  
+  Detection of insecure patterns such as hard-coded secrets, unsafe defaults, missing protections, or inconsistent security posture.
+
+#### Output and Integration
+
+Findings are expressed as **actionable, reviewable issues**, suitable for:
+
+- CI/CD integration
+- GitHub or Jira issue tracking
+- Periodic security posture review
+
+SCA is intended to support **continuous security assurance** during development — not one-time audits.
 
 Status: **Active development**
 
