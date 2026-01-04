@@ -83,5 +83,4 @@ Unless stated otherwise, projects favor permissive open-source licensing.
 ## Status
 
 OpenSourcerer.ai is an active engineering workspace.  
-Expect evolution, refinement, and iteration — not hype.
-
+Expect evolution, refinement, and iteration.
