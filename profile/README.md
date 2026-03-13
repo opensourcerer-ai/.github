@@ -1,109 +1,71 @@
-# OpenSourcerer.ai
+# OpenSourcerer AI
 
-**OpenSourcerer.ai** is an open-source organization focused on **serious, engineering-grade use of AI in software development**, with emphasis on **security, correctness, and long-lived systems**.
+OpenSourcerer AI develops tools for **structural reliability in AI-assisted software development**.
 
-This organization exists to explore how AI can be used **inside real engineering constraints**, not as a replacement for discipline, but as a force multiplier for engineers who already understand systems.
+The focus of this organization is the engineering layer around AI systems — the mechanisms that ensure systems remain **predictable, verifiable, and stable** even when large parts of the code are produced with AI assistance.
+
+Modern AI development often emphasizes model capability.  
+OpenSourcerer AI focuses on the **engineering discipline required to keep AI-driven systems correct over time**.
 
 ---
 
 ## Core Principles
 
-- **Engineering first**  
-  AI is a tool. Architecture, invariants, and correctness come first.
+### Structural Correctness
 
-- **Repositories encode intent**  
-  A repository is not just code. It represents decisions, constraints, and assumptions that must remain coherent over time.
+Reliable systems depend on structural truths that remain valid regardless of implementation details.
 
-- **Drift is the primary failure mode**  
-  Drift between intent, documentation, code, and behavior is where systems decay. AI must help detect and reduce this drift—not amplify it.
-
-- **Declarative over ad-hoc**  
-  Explicit rules, invariants, and specifications scale better than informal prompts.
+Instead of treating bugs as random failures, this approach treats them as **violations of system constraints** that should be explicitly enforced.
 
 ---
 
-## Active Projects
+### Drift Awareness
 
-### SCA — Security Control Agent
+AI-generated systems can drift as code evolves.
 
-**SCA** is a **Security Control Agent** that uses AI to analyze a software repository against defined security expectations and control sets.
-
-Instead of operating as a traditional vulnerability scanner, SCA focuses on **control-level analysis**: verifying that required security measures are present, coherent, and maintained as the codebase evolves.
-
-SCA is designed to function as an **engineering control**, not a certification or compliance product.  
-Its purpose is to help teams **express, verify, and preserve security intent over time**.
-
-#### Types of Analysis
-
-SCA can perform repository analysis aligned with recognized security frameworks and practices, including:
-
-- **OWASP**  
-  Evaluation of common application security risks and control gaps (e.g. OWASP Top 10–style concerns).
-
-- **NIST**  
-  Analysis of security controls and practices inspired by NIST guidance (e.g. identity, cryptography, access control, and lifecycle concerns), without asserting formal compliance.
-
-- **Cryptographic Usage Analysis**  
-  Inspection of cryptographic algorithms, modes, key handling practices, and configuration choices.
-
-- **Repository Security Hygiene**  
-  Detection of insecure patterns such as hard-coded secrets, unsafe defaults, missing protections, or inconsistent security posture.
-
-#### Output and Integration
-
-Findings are expressed as **actionable, reviewable issues**, suitable for:
-
-- CI/CD integration
-- GitHub or Jira issue tracking
-- Periodic security posture review
-
-SCA is intended to support **continuous security assurance** during development — not one-time audits.
-
-Status: **Active development**
+Maintaining reliability requires mechanisms that help detect structural inconsistencies early and guide systems back to a valid state.
 
 ---
 
-### PQC KMS Server — Post-Quantum Key Management
+### Long-Lived Systems
 
-The **PQC KMS Server** is an ongoing project focused on building a **high-assurance, post-quantum–capable key management service**.
+Software systems often outlive their original implementations.
 
-Key areas of focus include:
-
-- Modern cryptographic design with post-quantum readiness
-- Secure key lifecycle management
-- Strong separation of trust boundaries
-- Integration with hardware and platform security primitives where applicable
-
-This project targets environments where **cryptographic correctness and long-term security guarantees matter**, not convenience abstractions.
-
-Status: **Ongoing development**
+Tools and workflows must therefore prioritize **maintainability, clarity, and long-term stability**, especially when AI is part of the development process.
 
 ---
 
-## Scope and Intent
+## Project
 
-Projects under OpenSourcerer.ai are expected to be:
+### SCA — Security Code Agent
 
-- Inspectable
-- Reproducible
-- Usable in real engineering workflows
-- Suitable for integration into CI/CD pipelines
+SCA is a tool designed to analyze repositories and help detect structural security problems in codebases.
 
-This organization deliberately avoids:
-- Prompt-only experiments
-- Black-box tooling with no inspection path
-- Marketing-driven AI claims
+The project explores ways to improve software reliability by identifying patterns that may lead to vulnerabilities or architectural weaknesses.
+
+Goals include:
+
+- identifying unsafe coding patterns
+- highlighting structural risks in repositories
+- assisting developers in maintaining secure codebases
+- supporting long-term maintainability of security-sensitive systems
+
+Repository:
+
+https://github.com/opensourcerer-ai/sca
+
+---
+
+## Writing
+
+Roger Allan writes about AI systems, software reliability, and engineering practices for AI-assisted development.
+
+Follow the work here:
+
+https://rogerallan.substack.com
 
 ---
 
 ## License
 
-Each repository specifies its own license.  
-Unless stated otherwise, projects favor permissive open-source licensing.
-
----
-
-## Status
-
-OpenSourcerer.ai is an active engineering workspace.  
-Expect evolution, refinement, and iteration.
+Individual repositories contain their own license information.
