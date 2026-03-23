@@ -1,71 +1,98 @@
 # OpenSourcerer AI
 
-OpenSourcerer AI develops tools for **structural reliability in AI-assisted software development**.
+OpenSourcerer AI builds open-source tools for **AI-assisted security, cryptography, and repository analysis**.
 
-The focus of this organization is the engineering layer around AI systems — the mechanisms that ensure systems remain **predictable, verifiable, and stable** even when large parts of the code are produced with AI assistance.
+The organization focuses on practical engineering tools that help teams inspect codebases, verify security-related assumptions, and improve reliability in systems that must remain maintainable over time.
 
-Modern AI development often emphasizes model capability.  
-OpenSourcerer AI focuses on the **engineering discipline required to keep AI-driven systems correct over time**.
+Rather than treating AI as a substitute for engineering discipline, these projects use AI where it is useful while keeping the work grounded in reviewable outputs, explicit controls, and real software concerns.
 
 ---
 
 ## Core Principles
 
-### Structural Correctness
+### Engineering First
 
-Reliable systems depend on structural truths that remain valid regardless of implementation details.
+AI is a tool, not a replacement for sound engineering.
 
-Instead of treating bugs as random failures, this approach treats them as **violations of system constraints** that should be explicitly enforced.
-
----
-
-### Drift Awareness
-
-AI-generated systems can drift as code evolves.
-
-Maintaining reliability requires mechanisms that help detect structural inconsistencies early and guide systems back to a valid state.
+Projects in this organization are built to support real software work: analysis, verification, security review, and cryptographic integration.
 
 ---
 
-### Long-Lived Systems
+### Explicit Control
 
-Software systems often outlive their original implementations.
+Reliable systems depend on clear constraints, reviewable outputs, and mechanisms that make problems visible.
 
-Tools and workflows must therefore prioritize **maintainability, clarity, and long-term stability**, especially when AI is part of the development process.
+The goal is not opaque automation, but tools that help engineers understand what is happening and act on it.
 
 ---
 
-## Project
+### Long-Term Maintainability
 
-### SCA — Security Code Agent
+Software outlives individual implementations and often outlives the tools used to produce it.
 
-SCA is a tool designed to analyze repositories and help detect structural security problems in codebases.
+Projects here are developed with an emphasis on maintainability, clarity, and use in long-lived systems.
 
-The project explores ways to improve software reliability by identifying patterns that may lead to vulnerabilities or architectural weaknesses.
+---
 
-Goals include:
+## Projects
 
-- identifying unsafe coding patterns
-- highlighting structural risks in repositories
-- assisting developers in maintaining secure codebases
-- supporting long-term maintainability of security-sensitive systems
+### SCA — Security Control Agent
 
-Repository:
+SCA is an AI-assisted repository analysis tool focused on **security controls**.
 
+It evaluates codebases against defined security expectations and control-oriented review criteria, including analysis inspired by:
+
+- **OWASP**
+- **NIST**
+- cryptographic usage review
+- repository security hygiene
+- issue-oriented reporting for engineering workflows
+
+Repository:  
 https://github.com/opensourcerer-ai/sca
+
+---
+
+### FMA — Failure Mode Agent
+
+FMA is an AI-assisted repository analysis tool focused on **failure modes in software systems**.
+
+It identifies implementation patterns that commonly lead to instability, service failure, unsafe recovery behavior, and operational weakness.
+
+Typical areas of analysis include:
+
+- missing timeouts
+- unbounded resource usage
+- retry storms
+- unsafe concurrency patterns
+- missing backpressure or recovery controls
+- systemic reliability weaknesses in code and design
+
+Repository:  
+https://github.com/opensourcerer-ai/fma
+
+---
+
+### xpkcs11
+
+xpkcs11 is an open cryptographic project centered on **PKCS#11-related tooling and integration**.
+
+It focuses on clarity, portability, and practical support for secure cryptographic workflows in environments that rely on standard key management interfaces.
+
+Repository:  
+https://github.com/opensourcerer-ai/xpkcs11
 
 ---
 
 ## Writing
 
-Roger Allan writes about AI systems, software reliability, and engineering practices for AI-assisted development.
+Roger Allan writes about AI systems, software reliability, cryptography, and engineering practices for AI-assisted development.
 
-Follow the work here:
-
+Substack:  
 https://rogerallan.substack.com
 
 ---
 
 ## License
 
-Individual repositories contain their own license information.
+Each repository contains its own license information.
