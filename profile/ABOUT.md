@@ -43,13 +43,11 @@ Add individual articles below so that each publication has a direct, public refe
 ### Article Title
 
 **Topic:**
-The First Question They Ask
+[The First Question They Ask] (https://rogerallan.substack.com/p/the-first-question-they-ask)
 
 The first question the invariant engineer asks is: “What must remain true?”
 
 The question is operational. If it cannot be answered, construction is premature — because any change made without a stated preservation target has no mechanism for detecting when meaning is being lost.
-
-**URL:** [Read on Substack](https://rogerallan.substack.com/p/the-first-question-they-ask)
 
 ---
 
